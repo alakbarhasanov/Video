@@ -1,0 +1,35 @@
+.video{
+    background-color: black;
+}
+
+.speed{
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    bottom: 20px;
+    background: white;
+    right: 5px;
+    padding-left: 10px;
+}
+
+
+.settings{
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+    background: white;
+    height: 20px;
+    position: relative;
+    width: 701px;
+    justify-content: space-between;
+    left: 409px;
+    bottom: 22px;
+}
+
+#videoRange{
+    width: 695px;
+    position: relative;
+    bottom: 45px;
+    left: 418px;
+}
