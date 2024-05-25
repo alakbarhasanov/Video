@@ -143,6 +143,19 @@ videoElement.addEventListener("timeupdate", function () {
     videoRange.value = videoElement.currentTime;
 });
 
-videoRange.addEventListener("input", function() {
+videoRange.addEventListener("input", function () {
     videoElement.currentTime = videoRange.value;
-  });
+});
+
+
+
+volumeRange.addEventListener("input",function(){
+    var soundLevel = parseFloat(volumeRange.value);
+    videoElement.volume = soundLevel;
+    
+    if (soundLevel === 0) {
+        volumeHigh.classList.replace("volumeHigh", "fa-volume-xmark")
+    } else {
+        volumeHigh.classList.replace("fa-volume-xmark", "volumeHigh")
+    }
+})
